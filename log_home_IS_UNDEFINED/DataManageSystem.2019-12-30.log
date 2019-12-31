@@ -1,4 +1,0 @@
-2019-12-30 09:50:02.424 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication on pgos with PID 12388 (D:\opt\SOM\target\classes started by Administrator in D:\opt\SOM)
-2019-12-30 09:50:02.426 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
-2019-12-30 09:50:04.548 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.447 seconds (JVM running for 2.924)
-2019-12-30 09:50:10.710 [http-nio-8080-exec-1] INFO  com.example.demo.controller.UserController - 请求userMap
