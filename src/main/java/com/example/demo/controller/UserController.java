@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.Service.UserService;
 import com.example.demo.pojo.User;
+import com.example.demo.server.Config;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -22,11 +23,15 @@ public class UserController {
     private User user;
 
     @Autowired
-    Environment environment;
+    private Environment environment;
+
+    @Autowired
+    private Config config;
 
     @GetMapping("/userInfo1")
     @ResponseBody
     public User getUserInfo1() {
+        log.info(config.getServers().toString());
         log.info(environment.getProperty("sprint.current.application.name"));
         log.info(environment.getProperty("spring.env.name"));
         log.info(user.toString());
